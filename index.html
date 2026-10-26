@@ -213,6 +213,10 @@
       $('theme-restore').addEventListener('click',()=>{if(!previous)return;theme={...previous};previous=null;$('theme-heading').value=theme.heading;$('theme-body').value=theme.body;renderTheme();status('적용 전 테마 글꼴로 복원됨');});
     })();
   </script>
+  <script type="module">
+    import { inject } from 'https://cdn.jsdelivr.net/npm/@vercel/analytics@1/dist/index.mjs';
+    inject();
+  </script>
 </body>
 </html>
 
