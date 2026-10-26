@@ -213,6 +213,10 @@
       $('theme-restore').addEventListener('click',()=>{if(!previous)return;theme={...previous};previous=null;$('theme-heading').value=theme.heading;$('theme-body').value=theme.body;renderTheme();status('적용 전 테마 글꼴로 복원됨');});
     })();
   </script>
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
 
